@@ -1,0 +1,55 @@
+2014-03-01 14:42:54,652 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.IllegalArgumentException: Resource must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:112)
+	at org.springframework.transaction.support.TransactionSynchronizationUtils.unwrapResourceIfNecessary(TransactionSynchronizationUtils.java:62)
+	at org.springframework.transaction.support.TransactionSynchronizationManager.hasResource(TransactionSynchronizationManager.java:124)
+	at org.codehaus.groovy.grails.orm.hibernate.support.HibernatePersistenceContextInterceptor.init(HibernatePersistenceContextInterceptor.java:150)
+	at org.codehaus.groovy.grails.orm.hibernate.support.AbstractMultipleDataSourceAggregatePersistenceContextInterceptor.init(AbstractMultipleDataSourceAggregatePersistenceContextInterceptor.java:85)
+	at org.codehaus.groovy.grails.web.context.GrailsConfigUtils.executeGrailsBootstraps(GrailsConfigUtils.java:65)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.initWebApplicationContext(GrailsContextLoader.java:109)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4961)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5455)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:701)
+2014-03-01 14:42:54,690 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.IllegalArgumentException: Resource must not be null
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:701)
+2014-03-01 14:42:54,690 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.IllegalArgumentException: Resource must not be null
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:701)
+2014-03-01 14:42:54,690 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.IllegalArgumentException: Resource must not be null
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:701)
+2014-03-01 14:42:54,690 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.IllegalArgumentException: Resource must not be null
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:701)
+2014-03-01 14:42:54,690 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.IllegalArgumentException: Resource must not be null
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:701)
