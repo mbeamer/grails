@@ -1,12 +1,28 @@
 #! /usr/bin/python3.2
 
 import httplib2
+import argparse
+import sys
 
-headers = {'Accept':'application/json'}
-url = 'http://localhost:8080/job_mgr/request/show/1'
+def parse_args(argv):
+  ''' Parse the arglist and return as namespace '''
+  parser = argparse.ArgumentParser(description='job_mgr parsing')
+  parser.add_argument('-i', '--index', help='Index to request')
+  return(parser.parse_args(argv))
 
-req = httplib2.Http('.cache')
-resp = req.request(url, headers=headers)
+def main(argv):
+  ''' RESTfully query webserver and show the response '''
+  headers = {'Accept':'application/json'}
+  url = 'http://localhost:8080/job_mgr/request/show/'
 
-# Read the response
-print(resp)
+  args = parse_args(argv)
+  req = httplib2.Http('.cache')
+  try:
+    resp = req.request(url+args.index, headers=headers)
+    print(resp)
+    return(0)
+  except:
+    parse_args(['-h'])
+
+if __name__ == "__main__":
+  sys.exit(main(sys.argv[1:]))
