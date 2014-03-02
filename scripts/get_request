@@ -1,0 +1,12 @@
+#! /usr/bin/python3.2
+
+import httplib2
+
+headers = {'Accept':'application/json'}
+url = 'http://localhost:8080/job_mgr/request/show/1'
+
+req = httplib2.Http('.cache')
+resp = req.request(url, headers=headers)
+
+# Read the response
+print(resp)
